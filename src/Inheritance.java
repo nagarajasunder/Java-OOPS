@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Inheritance {
 
     public static void main(String[] args) {
@@ -61,7 +63,6 @@ class Employee {
     }
 
 
-
 }
 
 class Manager extends Employee {
@@ -87,7 +88,13 @@ class Manager extends Employee {
         return super.getSalary() + getBonus();
     }
 
+    public ArrayList<String> getManagerProjects() {
+        ArrayList<String> projects = new ArrayList<>();
+        projects.add("FLC");
+        projects.add("SWAT");
 
+        return projects;
+    }
 
 
 }
